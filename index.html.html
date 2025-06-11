@@ -1,0 +1,111 @@
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+
+<head>
+  <title>Pesan HTML buat Kamu Nih! </title>
+  <meta name="description" content="Buka bentar yaa.. HTML feeldream.id">
+  <meta name="keywords" content="HTML, Bucin, Feeldream">
+  <meta name="author" content="Feeldream">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <script src="swet_alert.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Ganti Audio di sini -->
+  <audio src="https://feeldreams.github.io/fullsenyum.mp3" id="linkmp3" class="sembunyi"></audio>
+
+  <div id="bodyblur">
+    <!-- Wallpaper --><img src="https://feeldreams.github.io/nightin.jpeg" id="wallpaper" />
+    <div id="beneranblur"></div>
+  </div>
+
+  <div id='Content'>
+
+    <div id="suratin" onClick="memulai();">
+      <!-- Tombol Surat --><img src="https://feeldreams.github.io/kadoin.png" />
+    </div>
+    <p id="ket">Klik Kadonya!</p>
+
+    <div class="kumpulanstiker">
+      <!-- Stiker untuk Konten -->
+      <img src="https://feeldreams.github.io/pusn.gif" id="stiker1" />
+      <img src="https://feeldreams.github.io/bunga.gif" id="stiker2" />
+      <img src="https://feeldreams.github.io/mndkat.gif" id="stiker3" />
+      <img src="https://feeldreams.github.io/smprt.gif" id="stiker4" />
+      <img src="https://feeldreams.github.io/ngumpet.gif" id="stiker5" />
+
+      <!-- Stiker untuk Akhiran -->
+      <img src="https://feeldreams.github.io/bunga.gif" id="stiker" onClick="ftaksi();" />
+      <img src="https://feeldreams.github.io/bunga.gif" id="stikerAkhir" />
+    </div>
+    <p id="halo">Good Night!</p>
+
+    <script class="sembunyi">
+      async function pesanAwal() {
+        suratin.style = "display:none"; ket.style = "display:none";
+        await swalst.fire({
+          title: 'Hai, Civa Bolo-bolo🤣',
+          imageUrl: '' + stiker1.src,
+        });
+        await swalst.fire({
+          title: 'Aku Cuma Mau Bilang 😋',
+          imageUrl: '' + stiker2.src,
+        });
+        await swalst.fire({
+          title: 'Good Night ya! 😜',
+          imageUrl: '' + stiker3.src,
+        });
+        await swalst.fire({
+          title: 'Gabole Tidur Malem² 😡',
+          imageUrl: '' + stiker4.src,
+        });
+        await swalst.fire({
+          title: 'Ntar ovt lagi loh 🥺',
+          imageUrl: '' + stiker5.src,
+        });
+        mulaikonten();
+      }
+    </script>
+    <div>
+      <blockquote id='bq'>
+
+        <!-- Konten Pembukaan -->
+        <p id="kalimat">Dah Segitu Aja ya.. 😁 </p>
+        <p id="kalimat2">Selamat melepas lelah, jangan lupa baca doa dulu sebelum tidur 😉 ... Semangat buat besok
+          jalani harinya yaa.. 🥳</p>
+        <p id="kalimatbawah">Civaa Bolo-bolo🥴</p>
+        <p id="kalimatbawah2" class="sembunyi">Good Night 😊</p>
+        <p id="kalimatbawah3" class="sembunyi">Mimpi Indah ya 😁</p>
+
+      </blockquote>
+    </div>
+
+    <!-- Tombol Multifungsi -->
+    <div id="Tombol">
+      <a onClick="multifungsi()">
+        <b id="tmbl">💌 Kirim</b>
+      </a>
+    </div>
+
+    <!-- Pesan yang dikirim ke WhatsApp -->
+    <span id="pesanWA" class="sembunyi">Awww Good Night too ❤️❤️❤️</span>
+
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Sampai Sini -->
+</body>
+
+</html>
